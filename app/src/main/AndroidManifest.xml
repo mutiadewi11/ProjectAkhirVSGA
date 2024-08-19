@@ -13,31 +13,23 @@
         android:theme="@style/Theme.ProjectAkhirVSGA"
         tools:targetApi="31">
         <activity
-            android:name=".EditDataAct"
+            android:name=".DataAlumniActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailNewsAct"
-            android:exported="false" />
+            android:name=".AddAlumniActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".DataAlumniAct"
-            android:exported="false" />
-        <activity
-            android:name=".AddDataAct"
-            android:exported="false" />
-        <activity
-            android:name=".AddData"
-            android:exported="false" />
-        <activity
-            android:name=".beritaFragment"
+            android:name=".EditAlumniActivity"
             android:exported="false" />
         <activity
             android:name=".DetailNewsActivity"
             android:exported="false" />
         <activity
-            android:name=".BeritaFragment"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

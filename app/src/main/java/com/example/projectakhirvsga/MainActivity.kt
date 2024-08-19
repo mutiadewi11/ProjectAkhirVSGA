@@ -1,6 +1,9 @@
 package com.example.projectakhirvsga
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
             when (item.itemId) {
                 R.id.nav_home -> selectedFragment = HomeFragment()
-                R.id.nav_news -> selectedFragment = NewsFragment()
+                R.id.nav_news -> selectedFragment = BeritaFragment()
                 R.id.nav_profile -> selectedFragment = ProfileFragment()
             }
 
@@ -61,12 +64,12 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.nav_add_alumni -> {
-                val intent = Intent(this, AddDataAct::class.java)
+                val intent = Intent(this, AddAlumniActivity::class.java)
                 startActivity(intent)
                 true
             }
             R.id.nav_data_alumni -> {
-                val intent = Intent(this, DataAlumniAct::class.java)
+                val intent = Intent(this, DataAlumniActivity::class.java)
                 startActivity(intent)
                 true
             }
@@ -84,9 +87,9 @@ class MainActivity : AppCompatActivity() {
     private fun writeUserInfoToFile() {
         val fileName = "user_info.txt"
         val fileContent = """
-            Dimas Febriyanto
-            dimas@example.com
-            50422430
+            Mutia Dewi
+            mdewi@gmail.com
+            51422181
             2IA21
         """.trimIndent()
 

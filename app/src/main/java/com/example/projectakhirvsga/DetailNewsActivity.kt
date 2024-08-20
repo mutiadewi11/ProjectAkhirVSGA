@@ -3,7 +3,6 @@ package com.example.projectakhirvsga
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 
 

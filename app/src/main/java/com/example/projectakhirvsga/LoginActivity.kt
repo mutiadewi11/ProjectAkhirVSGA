@@ -11,8 +11,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class LoginActivity : AppCompatActivity() {
-    private val STATIC_EMAIL = "mdewi903@gmail.com"
-    private val STATIC_PASSWORD = "mutiadewi"
+    private val STATIC_EMAIL = "mutia@gmail.com"
+    private val STATIC_PASSWORD = "mutia"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
